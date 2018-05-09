@@ -80,7 +80,7 @@ public class OLXController extends HttpServlet {
 		List<SubCategory> subcategoryList = null;
 		boolean isMultipart = ServletFileUpload.isMultipartContent(request);
 		if (isMultipart) {
-			System.out.println("jhfjehagfh");
+			
 			imageUploader(request).forward(request,response);
 		}
 		String action = request.getParameter("action");
@@ -103,7 +103,7 @@ public class OLXController extends HttpServlet {
 			redirectPage(request).forward(request,response);
 		}
 		if(action.equals("button2"))	{
-			System.out.println("hello");
+			
 			SubCategoryDAO subcategorydao = new SubCategoryDAO();
 			subcategoryList = subcategorydao.getAll();
 			request.setAttribute("subcategoryList", subcategoryList);
@@ -122,12 +122,12 @@ public class OLXController extends HttpServlet {
 		
 	}
 	private RequestDispatcher redirectPage(HttpServletRequest request) {
-		System.out.println("hy");
+		
 		
 		return request.getRequestDispatcher("./moderatorLogin.jsp");
 	}
 	private RequestDispatcher redirect(HttpServletRequest request) {
-		System.out.println("hy");
+		
 		
 		return request.getRequestDispatcher("./userPanel.jsp");
 	}
