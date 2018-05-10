@@ -95,7 +95,6 @@ public class OLXController extends HttpServlet {
 		}
 	
 		if(action.equals("button1"))	{
-			System.out.println("hello");
 			CategoryDAO categorydao = new CategoryDAO();
 			categoryList = categorydao.getAll();
 			request.setAttribute("categoryList", categoryList);
@@ -132,7 +131,6 @@ public class OLXController extends HttpServlet {
 		return request.getRequestDispatcher("./userPanel.jsp");
 	}
 	private RequestDispatcher getCategoryImages(HttpServletRequest request) {
-		System.out.println("Hai123456");
 		CategoryDAO categoryDao = new CategoryDAO();
 		List<Category> categoryList = new ArrayList();
 		categoryList = categoryDao.getAll();
@@ -331,7 +329,6 @@ public class OLXController extends HttpServlet {
 	            					item1.setSold(sold);
 	            					item1.setCountry(country);
 	            					item1.setImage(item.getName());
-	            					//item1.setDate(date);
 	            					SubCategory subCategory = new SubCategory();
 	            					SubCategoryDAO subCategoryDao = new SubCategoryDAO();
 	            					List<SubCategory> subCategoryList = new ArrayList();
