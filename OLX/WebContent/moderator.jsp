@@ -192,7 +192,7 @@ OLX
 <button type="submit" class="positive" name="add" id="add" style="display:block;width:auto;" onclick= "document.getElementById('id01').style.display='block';" ><font size="6">Add Category</font></button>
 <button type="submit" class="positive" name="add" id="addsubCategory" style="display:block;width:auto;" onclick="document.getElementById('id02').style.display='block'"><font size="6">Add Sub-Category</font></button>
 
-<form action="./SiopaController" method = "post">
+<form action="./OLXController" method = "post">
 <!-- onclick="dochange();"-->
 <button  style="width:auto;"><font size="4">Category</font></button>
 
@@ -212,7 +212,7 @@ OLX
 
 
 </form>
-<form action="./SiopaController" method = "post">
+<form action="./OLXController" method = "post">
 <input type = "hidden" name = "action" value = "button2">
 <!-- onclick="Mychange();"-->
 <button  style="width:auto;"><font size="4">SubCategory</font></button>
@@ -235,7 +235,7 @@ OLX
 
 
   
-  <form class="modal-content animate" action="./SiopaController" method = "post" enctype = "multipart/form-data">
+  <form class="modal-content animate" action="./OLXController" method = "post" enctype = "multipart/form-data">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       
@@ -288,7 +288,7 @@ OLX
 
 <div id="id02" class="modal">
   
-  <form class="modal-content animate" action="./SiopaController" method = "post" enctype = "multipart/form-data">
+  <form class="modal-content animate" action="./OLXController" method = "post" enctype = "multipart/form-data">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
        <div data-role="popup" id="myPopup1" class="ui-content" style="min-width:300px;">
